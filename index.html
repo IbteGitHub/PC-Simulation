@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PC Simulation</title>
+</head>
+<body>
+
+<div id="welcome-screen">
+    <h1>Welcome to PC Simulation</h1>
+    <p>Get ready to assemble and disassemble a PC!</p>
+    <button onclick="showOptions()">Continue</button>
+</div>
+
+<div id="options-screen" style="display: none;">
+    <p>Would you like to view a PC assembly demonstration?</p>
+    <button onclick="startAssembly()">Yes</button>
+    <button onclick="showDescription()">No</button>
+</div>
+
+<div id="assembly-video" style="display: none;">
+    <!-- Embed your assembly tutorial video here -->
+    <p>Video Player</p>
+</div>
+
+<div id="description-screen" style="display: none;">
+    <p>Description of Internal Components</p>
+    <!-- Add buttons for Assemble, Disassemble, Description, and Exit -->
+    <button onclick="assemble()">Assemble</button>
+    <button onclick="disassemble()">Disassemble</button>
+    <button onclick="showComponentDescription()">Description of Internal PC Components</button>
+    <button onclick="exit()">Exit</button>
+</div>
+
+<div id="component-description" style="display: none;">
+    <!-- Display component description here -->
+    <p>Component Description</p>
+</div>
+
+<div id="assembly-screen" style="display: none;">
+    <!-- Drag and drop area for assembly -->
+    <p>Drag and drop components to assemble</p>
+</div>
+
+<div id="disassembly-screen" style="display: none;">
+    <!-- Drag and drop area for disassembly -->
+    <p>Drag and drop components to disassemble</p>
+</div>
+
+<div id="finish-screen" style="display: none;">
+    <button onclick="finishSimulation()">Finish</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
